@@ -3,11 +3,10 @@ layout: 'base.html'
 description: "Meta description for the page"
 metaTitle: 'Title that shows up on google searches'
 tagTitle: 'About'
-preloadImg: '/images/cabinets2-1920w.webp'
 preloadCSS: '/css/about.css'
 permalink: 'about/'
 eleventyNavigation:
-    key: About Us
+    key: About
     order: 200
 ---
 
@@ -18,8 +17,8 @@ eleventyNavigation:
 <!-- ============================================ -->
 
 <section id="int-hero">
-  <h1 id="home-h">About Us</h1>
-  {% image './src/images/cabinets2.jpg', 'cabinets', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
+  <h1 id="home-h">About Me</h1>
+  {% image './src/images/painted-abstract-background.jpg', 'absract background', '', 'lazy', '(max-width: 850px) 850px, 1920px'%}
 </section>
 
 <!-- ============================================ -->
@@ -30,29 +29,34 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-      {% image './src/images/cabinets2.jpg', 'cabinets', 'cs-picture cs-picture1', 'lazy'%}
-      {% image './src/images/construction.jpg', 'house', 'cs-picture cs-picture2', 'lazy'%}
+		{% image './src/images/lock_family.jpg', 'headshot', 'cs-picture cs-picture1', 'lazy'%}
+        {% image './src/images/Cheryl_Lock_Headshot2.jpg', 'family picture', 'cs-picture cs-picture2', 'lazy'%}
     </div>
     <!-- Right Content Section-->
-    <div class="cs-right">
-      <span class="cs-topper">About Us</span>
-      <h2 class="cs-title">About Company Title</h2>
-      <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
-      <p class="cs-text">
-                In consequat tincidunt turpis sit amet imperdiet. Praesent Class officelan nonatoureanor mauris laoreet, iaculis libero quis. Curabitur et tempus eri consequat tincidunt turpis sit amet imperdiet. Praesent nonatourean olei aptent taciti sociosqu ad litora torquent per.
-            </p>
-      <div class="cs-flex-group">
-        <p class="cs-flex-p">
-                    In consequat tincidunt turpis sit amet imperdiet. Praesent Classei consequat tincidunt turpis sit amet imperdiet for mind.
-                </p>
-        <span class="cs-name">Justin Time</span>
-        <span class="cs-job">CEO-Founder</span>
-        <img class="cs-quote-icon" loading="lazy" decoding="async" src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg" alt="gavel" width="136" height="77">
-      </div>
-      <a href="" class="button-solid">More About Us</a>
-    </div>
+	<div class="cs-right">
+		<span class="cs-topper">About Me</span>
+		<h2 class="cs-title">Write, Editor, Content Creator</h2>
+		<p class="cs-text">I graduated from James Madison University with a major in journalism and minors in both biology and American Studies. 
+			I've worked for newspapers, magazines, websites and everything in between.
+		</p>
+		<p class="cs-text">After starting my career in Manhattan I moved to Denver, where I currently live with my husband, Chris, and our daughters Lotte, Grace and Emilia.
+			Chris and I met at a Gypsy punk band concert on New Year's Eve of 2007, and we got engaged at a concert for the same Gypsy punk band on New Year's Eve of 2011.
+		</p>
+		<p class="cs-text">I was born in Germany and have lived in places all up and down the east coast. My work has appeared in The New York Times, 
+			Real Simple, Woman's Day, Runner's World, Forbes, Parents, The St. Augustine Record and much more.
+		</p>
+		<p class="cs-text">My stories have also been syndicated all over the Web. A few examples include, Business Insider and USA Today.
+		</p>
+		<p class="cs-text">In my last staff job I worked as an editor at LearnVest, where I launched the inaugural parenting section. My job was to pitch and manage all ideas, 
+			create the monthly calendar for daily newsletters and write and/or edit all content relating to the newsletter and blog. I also wrote the 10-day Baby 
+			on Board email newsletter, which guided parents through everything they need to do to get their finances in order before Baby arrives. I also helped 
+			foster a syndication partnership between LearnVest and Parents and acted as the voice or talent for LearnVest in multimedia situations, to include 
+			radio spots and videos. 
+		</p>
+		<p class="cs-text">In addition to the magazine and website work I've done, I've also provided content and/or advertorials for corporate clients including Ameriprise, H&R Block, 
+			Procter & Gamble, Luxottica and U.S. Cellular, among others. You can view my full resume here, or email me to chat.
+		</p>
+	</div>
   </div>
 </section>
 
