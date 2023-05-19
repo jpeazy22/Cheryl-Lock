@@ -1,8 +1,10 @@
 #resume {
 	max-width: 850px;
-	border: solid 1px var(--primary);
-	border-radius: 50px;
 	margin: 30px auto;
+}
+#resume .container {
+	border-top: solid 2px var(--primaryShade);
+	border-bottom: solid 2px var(--primaryShade);
 }
 .resume_section {
 	margin: 30px 20px;
