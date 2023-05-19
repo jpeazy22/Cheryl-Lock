@@ -4,7 +4,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #hero {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: 'space_monoregular', 'alex_brushregular', sans-serif;
     /* Centers button */
     text-align: center;
     /* changes on tablet */
@@ -276,11 +276,18 @@
     margin: auto;
     margin-bottom: 3.125em;
   }
+  .services .card a {
+	text-decoration: none;
+	color: var(--primary);
+  }
+  .services .card a:hover {
+   color: var(--bodyTextColor);
+  }
   .services .card:last-of-type {
     margin-bottom: 0;
   }
   .services .card picture {
-    background: var(--primary);
+    border: 2px solid var(--primaryShade);
     width: 5.5em;
     height: 5.5em;
     display: flex;
@@ -299,7 +306,7 @@
     font-size: 2em;
     line-height: 1.35em;
     font-weight: 700;
-    color: #1a1a1a;
+    color: var(--bodyTextColor);
     margin-bottom: 0.65em;
   }
   .services .card p {

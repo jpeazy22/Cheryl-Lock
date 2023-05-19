@@ -25,7 +25,7 @@
     position: relative;
   }
   #sbs .cs-picture {
-    border-radius: 1.5em;
+    border-radius: 19.5em;
     /* clips img tag corners */
     overflow: hidden;
     position: absolute;
@@ -42,9 +42,10 @@
   }
   #sbs .cs-picture1 {
     width: 32.625em;
-    height: 36.3125em;
+    height: 33.3125em;
     left: 0;
     top: 0;
+	border: clamp(0.375em, 1.5vw, 0.25em) solid #F0D9CB;
   }
   #sbs .cs-picture2 {
     width: 25.875em;
@@ -52,7 +53,7 @@
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
     /* 6px - 12px */
-    border: clamp(0.375em, 1.5vw, 0.75em) solid #ffffff;
+    border: clamp(0.375em, 1.5vw, 0.25em) solid #F0D9CB;
     right: 0;
     bottom: 0;
   }
@@ -78,7 +79,7 @@
     text-align: left;
     max-width: 50rem;
     margin: 0 auto 1rem;
-    color: var(--headerColor);
+    color: var(--bodyTextColor);
     position: relative;
   }
   #sbs .cs-text {

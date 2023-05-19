@@ -13,7 +13,7 @@
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
   #cs-contact {
-    font-family: 'Roboto', 'Arial', sans-serif;
+    font-family: 'space_monoregular', 'alex_brushregular', sans-serif;
     padding: var(--sectionPadding);
   }
   #cs-contact .cs-container {
@@ -44,7 +44,7 @@
     text-align: left;
     max-width: 50rem;
     margin: 0 auto 1rem 0;
-    color: var(--headerColor);
+    color: var(--bodyTextColor);
     position: relative;
   }
   #cs-contact .cs-text {
@@ -108,9 +108,10 @@
     line-height: 3.5rem;
     text-decoration: none;
     font-weight: 700;
+	border-radius: 26px;
     text-align: center;
     margin: auto;
-    color: #1a1a1a;
+    color: #fff;
     min-width: 9.375rem;
     padding: 0 1.5rem;
     background-color: var(--primary);
@@ -127,7 +128,7 @@
     position: absolute;
     height: 100%;
     width: 0%;
-    background: #000;
+    background: var(--bodyTextColor);
     opacity: 1;
     top: 0;
     left: 0;
@@ -162,7 +163,7 @@
     line-height: 1.2em;
     font-weight: 700;
     margin-bottom: 0.5rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     display: block;
   }
   #cs-contact .cs-link {
@@ -171,7 +172,7 @@
     line-height: 1.2em;
     text-decoration: none;
     margin-bottom: 1.25rem;
-    color: var(--bodyTextColorWhite);
+    color: var(--bodyTextColor);
     display: block;
     position: relative;
   }

@@ -4,12 +4,12 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   :root {
-    --primary: #FFBA19;
-    --primaryShade: #ffd675;
-    --primaryDark: #805d0d;
-    --bodyTextColor: #4E4B66;
+    --primary: #C85FD7;
+    --primaryShade: #F0D9CB;
+    --primaryDark: #374151;
+    --bodyTextColor: #2F4A74;
     --bodyTextColorWhite: #FAFBFC;
-    --headerColor: #1a1a1a;
+    --headerColor: #ffffff;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -17,39 +17,26 @@
     /* 60px - 100px top and bottom */
     --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem;
   }
-  /* roboto-regular - latin */
   @font-face {
-    font-family: 'Roboto';
+    font-family: 'alex_brushregular';
+    src: url('../assets/fonts/alex-brush-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/alex-brush-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 400;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-regular.woff') format('woff');
-    
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-700 - latin */
-  @font-face {
-    font-family: 'Roboto';
+	}
+@font-face {
+    font-family: 'space_monoregular';
+    src: url('../assets/fonts/space-mono-regular-webfont.woff2') format('woff2'),
+         url('../assets/fonts/space-mono-regular-webfont.woff') format('woff');
+    font-weight: normal;
     font-style: normal;
-    font-weight: 700;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-700.woff') format('woff');
-    
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* roboto-900 - latin */
-  @font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    src: local(''), url('/assets/fonts/roboto-v29-latin-900.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */ url('/assets/fonts/roboto-v29-latin-900.woff') format('woff');
-    
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+	}
   body,
   html {
     margin: 0;
     padding: 0;
     font-size: 100%;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: 'space_monoregular', 'alex_brushregular', serif;
     color: var(--bodyTextColor);
     overflow-x: hidden;
   }
@@ -75,7 +62,7 @@
   h5,
   h6 {
     margin: 0;
-    color: var(--headerColor);
+    color: var(--primary);
   }
   p,
   li,
@@ -95,18 +82,19 @@
   .button-solid {
     font-size: 1rem;
     font-weight: bold;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     text-decoration: none;
     display: inline-block;
     width: auto;
-    line-height: 3.125em;
-    height: 3.125rem;
+    line-height: 3.025em;
+    height: 3.025rem;
+	border-radius: 26px;
     text-align: center;
-    padding: 0 1.875rem;
+    padding: 0 1.575rem;
     position: relative;
     z-index: 1;
     background-color: var(--primary);
-    color: #000;
+    color: #fff;
     transition: color .3s;
     transition-delay: .1s;
   }
@@ -120,12 +108,13 @@
     content: '';
     position: absolute;
     display: block;
+	border-radius: 26px;
     height: 100%;
     opacity: 1;
     top: 0;
     left: 0;
     z-index: -1;
-    background-color: #000;
+    background-color: var(--bodyTextColor);
     width: 0;
     transition: width .3s;
   }
@@ -307,13 +296,14 @@
   }
   #navigation #navbar-menu ul li a {
     text-decoration: none;
-    text-transform: uppercase;
-    color: #000;
-    font-size: 1.1875rem;
-    text-align: center;
+    text-transform: none;
+    color: var(--accent);
+    font-size: 1.13rem;
+    text-align: right;
     display: inline-block;
     position: relative;
-    font-weight: bold;
+    font-weight: lighter;
+	font-family: alex_brushregular;
   }
   #navigation #navbar-menu ul li a.active:before {
     content: '';
@@ -366,7 +356,7 @@
     display: block;
   }
   body.scroll #navigation #navbar-menu ul li a {
-    color: #1a1a1a;
+    color: var(--accent);
   }
   body.scroll #dark-mode-toggle svg path {
     fill: #000;
@@ -377,7 +367,7 @@
   }
   #navigation {
     width: 100%;
-    height: 6.25rem;
+    height: 12.25rem;
     position: fixed;
     top: 0;
     left: 0;
@@ -403,12 +393,12 @@
   }
   #navigation .logo {
     margin-right: auto;
-    height: 3.75rem;
+    /* height: 3.75rem; */
     width: auto;
   }
   #navigation .logo img {
-    width: auto;
-    height: 100%;
+    width: 300px;
+    height: auto;
   }
   #navigation #navbar-menu ul {
     padding: 0;
@@ -423,7 +413,7 @@
   }
   #navigation #navbar-menu ul li a {
     text-decoration: none;
-    font-weight: bold;
+    font-weight: lighter;
     /* 14px - 18px */
     font-size: clamp(0.875rem, 1.5vw, 1.125rem);
     text-transform: uppercase;
@@ -544,8 +534,8 @@
     display: block;
     height: 100%;
     width: 100%;
-    background: #000;
-    opacity: .7;
+    /* background: #000; */
+    opacity: .2;
     top: 0;
     left: 0;
     z-index: -1;
@@ -613,116 +603,47 @@
 /* Mobile */
 @media only screen and (min-width: 0em) {
   #footer {
-    background: #1C1C1C;
-    padding: 5.25rem 0 1.25rem;
-    font-size: min(4vw, 1.2em);
+    background: #fff;
+	border-top: 2px solid var(--primary);
+    padding: 3.25rem 0 1.25rem;
   }
   #footer .left-section {
     margin: auto;
     margin-bottom: 3.125rem;
-    text-align: center;
-  }
-  #footer .left-section .logo {
-    display: inline-block;
-    margin: auto;
-    width: auto;
-    height: 3.125em;
-    margin-bottom: 1.875em;
-    text-align: center;
-  }
-  #footer .left-section .logo img {
-    width: auto;
-    height: 100%;
-    display: block;
   }
   #footer .left-section p {
-    font-size: 0.875rem;
+    margin-bottom: 1.875em;
+	text-align: center;
+  }
+  #footer .logo {
+	  text-align: center;
+	  padding-bottom: 10px;
+  }
+  #footer p {
+    font-size: 14px;
     line-height: 1.92857143;
-    color: #fff;
+    color: var(--bodyTextColor);
     opacity: .9;
     text-align: center;
     width: 100%;
     width: 21.92857143rem;
     margin: auto;
   }
+  #footer p a i {
+	  padding: 0px 5px;
+	  color: var(--primary);
+  }
+  #footer p a i:hover {
+	  color: var(--bodyTextColor);
+  }
   #footer .right-section {
     width: 96%;
     max-width: 25.4375rem;
     margin: auto;
-  }
-  #footer .right-section .lists {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    width: 96%;
-    max-width: 19.1875rem;
-    margin: auto;
-  }
-  #footer .right-section .lists ul {
-    padding: 0;
-    margin-bottom: 0;
-    margin-top: 0;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) {
-    margin-top: 3.125rem;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) li {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-bottom: 1rem;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) li:last-of-type {
-    margin-bottom: 0;
-  }
-  #footer .right-section .lists ul li {
-    list-style: none;
-    margin-bottom: 0.75rem;
-    color: #fff;
-    font-size: 1.125rem;
-    opacity: .9;
-  }
-  #footer .right-section .lists ul li a {
-    text-decoration: none;
-    color: #fff;
-    line-height: 1.16666667em;
-    transition: color .3s;
-  }
-  #footer .right-section .lists ul li a:hover {
-    color: var(--primary);
-  }
-  #footer .right-section .lists ul h2 {
-    color: #fff;
-    font-size: 1.125rem;
-    line-height: 1.16666667em;
-    margin-bottom: 2.3125rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    position: relative;
-  }
-  #footer .right-section .lists ul h2:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 0.125rem;
-    width: 6.0625rem;
-    background: var(--primary);
-    opacity: 1;
-    bottom: -1rem;
-    left: 0;
-  }
-  #footer .right-section .buttons {
-    display: flex;
-    justify-content: center;
-  }
-  #footer .right-section .button-solid {
-    margin: 0;
-    height: 3.3125rem;
-    padding-top: 0.1875rem;
-    width: 15.625rem;
+	text-align: center;
   }
   #footer .credit {
-    color: #fff;
+    color: var(--bodyTextColor);
     width: 96%;
     margin: auto;
     text-align: center;
@@ -733,14 +654,14 @@
   #footer .credit a {
     color: var(--primary);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 14px;
   }
   #footer .credit a:hover {
     text-decoration: underline;
   }
-  #footer .credit .copyright {
+  #footer .copyright {
     display: block;
-    font-size: 1rem;
+    font-size: 14px;
   }
 }
 /* Small Desktop */
@@ -761,7 +682,7 @@
   #footer .left-section {
     width: 25.5625rem;
     margin: 0;
-    text-align: left;
+    text-align: center;
   }
   #footer .left-section .logo {
     text-align: left;
@@ -769,46 +690,13 @@
     height: 4.375rem;
   }
   #footer .left-section p {
-    text-align: left;
+    text-align: center;
     margin-left: 0;
   }
   #footer .right-section {
     margin: 0;
     width: 38.0625rem;
     max-width: none;
-  }
-  #footer .right-section .lists {
-    width: 96%;
-    max-width: 48.0625rem;
-    margin: 0;
-    max-width: initial;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) {
-    margin-top: 0;
-  }
-  #footer .right-section .lists ul:nth-of-type(3) li:first-of-type {
-    margin-bottom: 0;
-  }
-  #footer .right-section .lists ul li a {
-    position: relative;
-  }
-  #footer .right-section .lists ul li a:before {
-    content: '';
-    position: absolute;
-    display: block;
-    height: 0.125rem;
-    width: 0%;
-    background: var(--primary);
-    opacity: 1;
-    bottom: -0.1875rem;
-    left: 0;
-    transition: width .3s;
-  }
-  #footer .right-section .lists ul li a:hover:before {
-    width: 100%;
-  }
-  #footer .right-section .buttons {
-    justify-content: flex-start;
   }
   #footer .credit .copyright {
     display: inline-block;

@@ -21,16 +21,16 @@
 
         <!--Favicons-->
         <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicons/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicons/favicon-32x32.png?v1">
-        <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicons/favicon-16x16.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicons/favicon-32x32.png?v1">
+        <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicons/favicon-16x16.png">
         <link rel="manifest" href="/assets/favicons/site.webmanifest">
         <meta name="msapplication-TileColor" content="#da532c">
         <meta name="theme-color" content="#ffffff">
 
         <!-- Preload -->
-        <link rel="preload" as="image" href="/assets/logo-light.png">
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-regular.woff2" crossorigin>
-        <link rel="preload" as="font" type="font/woff2" href="/assets/fonts/roboto-v29-latin-700.woff2" crossorigin>
+        <link rel="preload" as="image" href="../assets/images/logo-color.png">
+        <link rel="preload" as="font" type="font/woff" href="../assets/fonts/space-mono-regular-webfont.woff" crossorigin>
+        <link rel="preload" as="font" type="font/woff2" href="../assets/fonts/space-mono-regular-webfont.woff2" crossorigin>
 
         <link rel="stylesheet" href="/css/root.css">
         <link rel="stylesheet" href="/css/dark.css">
@@ -40,6 +40,7 @@
         <!-- Loading in page specific CSS sheets from css block -->
         <link rel="stylesheet" href="/css/critical.css"/>
         <link rel="stylesheet" href="{{ preloadCSS }}">
+		
 
         <!--Put analytics tag here at the bottom to prevent it from render blocking-->
 
@@ -51,6 +52,9 @@
                 {{ tagTitle }} | {{ client.name }}
             {% endif %}
         </title>
+		
+		<!--- fontawesome --->
+		<script src="https://kit.fontawesome.com/dd59819b9f.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <!--Screen reader skip main nav-->
