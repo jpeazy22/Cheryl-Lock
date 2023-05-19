@@ -14,9 +14,6 @@
 }
 
 /* Large Desktop */
-.container {
-	/* background: url("/assets/svgs/cta-squares.svg"); */
-}
 .print_clips {
 	width: 100%;
 	max-width: 1000px;
@@ -82,6 +79,10 @@
   /*-- -------------------------- -->
   <---    Website Clips Styles    -->
   <--- -------------------------- -*/ 
+  .website_container {
+	  margin: 0 auto;
+	  max-width: 1000px;
+  }
   .webclips-title {
 	  color: var(--bodyTextColor);
 	  padding: 20px 0px;
@@ -168,7 +169,11 @@
 	.custom_clips {
 	  	grid-template-columns: 1fr 2fr;
 	  }
-	.personal_finance .column_1, .personal_finance .column_2 {
+	  .website_container {
+    	  margin: 0 auto;
+		  max-width: 700px;
+      }
+	  .personal_finance .column_1, .personal_finance .column_2 {
 		display: block;
 		width: 100%;
 	}
@@ -199,6 +204,9 @@
 		padding-top: 10px;
 		margin: 1.5%
     }
+	.website_container {
+		margin: 0 30px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
