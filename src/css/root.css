@@ -68,7 +68,7 @@
   li,
   a {
     font-size: 1.125rem;
-    /* line-height: 1.5em; */
+    line-height: 1.5em;
     margin: 0;
   }
   p,
@@ -306,6 +306,7 @@
     display: inline-block;
     position: relative;
     font-weight: lighter;
+	line-height: 1em;
 	font-family: alex_brushregular;
   }
   #navigation #navbar-menu ul li a.active:before {
@@ -329,6 +330,7 @@
   #navigation #navbar-menu.open ul li {
     opacity: 1;
     transform: translateY(0) rotateX(0);
+	line-height: 20px;
   }
 }
 /* Desktop */
