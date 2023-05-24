@@ -715,10 +715,16 @@
   #footer .credit .copyright {
     display: inline-block;
   }
+  body.dark-mode #footer span.copyright, body.dark-mode #footer .left-section p {
+    color: var(--primaryShade);
+  }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #footer {
     background: #061623;
+  }
+  body.dark-mode #footer span.copyright, body.dark-mode #footer .left-section p {
+    color: var(--primaryShade);
   }
 }

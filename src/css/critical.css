@@ -306,7 +306,7 @@
     font-size: 2em;
     line-height: 1.35em;
     font-weight: 700;
-    color: var(--bodyTextColor);
+    color: var(--primary);
     margin-bottom: 0.65em;
   }
   .services .card p {

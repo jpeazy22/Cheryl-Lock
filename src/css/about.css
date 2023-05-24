@@ -48,8 +48,8 @@
 	border: clamp(0.375em, 1.5vw, 0.25em) solid #F0D9CB;
   }
   #sbs .cs-picture2 {
-    width: 25.875em;
-    height: 25em;
+    width: 18.875em;
+    height: 19em;
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
     /* 6px - 12px */
@@ -162,9 +162,6 @@
     background-color: var(--dark);
     /* 6px - 12px */
     border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-  }
-  body.dark-mode #sbs .cs-topper {
-    color: var(--primaryLight);
   }
   body.dark-mode #sbs .cs-title,
   body.dark-mode #sbs .cs-text,

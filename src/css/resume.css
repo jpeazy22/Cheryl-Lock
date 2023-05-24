@@ -6,6 +6,10 @@
 	border-top: solid 2px var(--primaryShade);
 	border-bottom: solid 2px var(--primaryShade);
 }
+#resume_section a {
+	color: var(--primary);
+	text-decoration: none;
+}
 .resume_section {
 	margin: 30px 20px;
 }

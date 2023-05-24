@@ -101,6 +101,7 @@
   .personal_finance a {
 	  text-decoration: none;
 	  color: var(--primary);
+	  padding-left: 5px;
   }
   .personal_finance .column_1 {
 	  display: inline-block;
@@ -115,9 +116,13 @@
 	  display: inline-block;
   }
   .personal_finance .column_2 span {
-	  border-right: 3px solid var(--primaryShade);
-	  padding-right: 5px;
+	  border-right: 2px solid var(--primaryShade);
+	  padding-right: 10px;
 	  color: var(--bodyTextColor);
+  }
+  body.dark-mode .personal_finance .column_2 span {
+	  border-right: 2px solid #fff;
+	  color: var(--primaryShade);
   }
   /*-- -------------------------- -->
   <---    Special Content Styles    -->
