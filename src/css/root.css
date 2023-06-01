@@ -19,15 +19,11 @@
   }
   @font-face {
     font-family: 'alex_brushregular';
-    src: url('../assets/fonts/alex-brush-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/alex-brush-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 	}
 @font-face {
     font-family: 'space_monoregular';
-    src: url('../assets/fonts/space-mono-regular-webfont.woff2') format('woff2'),
-         url('../assets/fonts/space-mono-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 	}
