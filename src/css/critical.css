@@ -313,7 +313,7 @@
     text-align: center;
     line-height: 1.33333333em;
     width: 100%;
-    opacity: .7;
+	color: var(--bodyTextColor);
   }
 }
 /* Inbetween */
@@ -350,5 +350,8 @@
   body.dark-mode #services h2 {
     color: #fff;
     font-weight: bold;
+  }
+  body.dark-mode .services .card p {
+	color: var(--primaryShade);
   }
 }

@@ -61,6 +61,13 @@
     margin: auto;
     max-width: 33.875rem;
   }
+  #sbs .cs-right a {
+	color: var(--primary);
+	text-decoration: none; 
+  }
+  #sbs .cs-right a:hover {
+   color: var(--primaryShade);
+  }
   #sbs .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
