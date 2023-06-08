@@ -233,17 +233,6 @@
     margin-right: 1.25rem;
   }
 }
-/* Desktop Parallax Effect - 1300px */
-@media only screen and (min-width: 81.25em) {
-  #hero {
-    background: url("/images/landing-2000w.jpeg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* creates parallax effect on background image */
-    background-attachment: fixed;
-  }
-}
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
   body.dark-mode #hero .cs-background:before {
