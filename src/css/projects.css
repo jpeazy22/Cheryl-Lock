@@ -40,6 +40,7 @@
 .clip p {
 	font-size: 13px;
 	color: var(--bodyTextColor);
+	padding-top: 5px;
 }
 .clip h2 {
 	color: var(--bodyTextColor);
