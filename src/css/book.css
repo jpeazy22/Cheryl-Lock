@@ -95,6 +95,11 @@
     color: var(--secondary);
     position: relative;
   }
+  #sbs h2 {
+      color: var(--bodyTextColor);
+      margin: 40px 0px;
+      font-weight: lighter;
+  }
   #sbs .cs-text {
     font-size: var(--bodyFontSize);
     line-height: 1.5em;
@@ -147,7 +152,7 @@
     right: clamp(1rem, 4vw, 2rem);
   }
   #sbs .button-solid {
-    margin-top: 2rem;
+    margin-top: 35px;
   }
   #about-author {
       width: 100%;
