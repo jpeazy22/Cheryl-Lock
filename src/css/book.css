@@ -68,11 +68,11 @@
     max-width: 33.875rem;
   }
   #sbs .cs-right a {
-	color: var(--accent);
+	color: #ffffff;
 	text-decoration: none; 
   }
   #sbs .cs-right a:hover {
-   color: var(--primaryShade);
+   color: #ffffff;
   }
   #sbs .cs-topper {
     font-size: var(--topperFontSize);
