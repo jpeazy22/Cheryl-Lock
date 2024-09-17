@@ -9,10 +9,15 @@
 }
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
-  #sbs {
+  #sbs, #about-author {
     padding: var(--sectionPadding);
   }
-  #sbs .cs-container {
+  #about-author {
+    background: #C3BCCC;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  #sbs .cs-container, #about-author .container {
     width: 100%;
     max-width: 80rem;
     margin: auto;
@@ -22,11 +27,11 @@
     flex-direction: column;
     row-gap: 2.5rem;
   }
-  #sbs .cs-left {
+  #sbs .cs-left, #about-author .right {
     /* scaling the font size with the view width */
     font-size: min(2.31vw, .7em);
     /* using ems so we can use font size to scale the whole section */
-    width: 39.4375em;
+    /* width: 39.4375em; */
     height: 44em;
     position: relative;
     display: block;
@@ -49,6 +54,8 @@
   #sbs .cs-picture1 {
     width: 32.625em;
     height: 44.3125em;
+    position: relative;
+    margin: 0 auto;
     left: 0;
     top: 0;
 	border: clamp(0.375em, 1.5vw, 0.25em) solid #F0D9CB;
@@ -63,7 +70,7 @@
     right: 0;
     bottom: 0;
   }
-  #sbs .cs-right {
+  #sbs .cs-right, #about-author .left {
     margin: auto;
     max-width: 33.875rem;
   }
@@ -74,7 +81,7 @@
   #sbs .cs-right a:hover {
    color: #ffffff;
   }
-  #sbs .cs-topper {
+  #sbs .cs-topper, .cs-topper {
     font-size: var(--topperFontSize);
     line-height: 1.2em;
     text-transform: uppercase;
@@ -86,7 +93,7 @@
     display: block;
   }
   #sbs .cs-title {
-    font-size: var(--headerFontSize);
+    font-size: 2.5em;
     font-weight: 900;
     line-height: 1.2em;
     text-align: left;
@@ -99,6 +106,7 @@
       color: var(--bodyTextColor);
       margin: 40px 0px;
       font-weight: lighter;
+      text-align: center;
   }
   #sbs .cs-text {
     font-size: var(--bodyFontSize);
@@ -154,42 +162,11 @@
   #sbs .button-solid {
     margin-top: 35px;
   }
-  #about-author {
-      width: 100%;
-      max-width: 80rem;
-      margin: 0px auto 30px auto;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-      row-gap: 2.5rem;
-  }
-  #about-author .container {
-      max-width: 80rem;
-      margin: 0 auto;
-      display: inline-block;
-  }
-  #about-author .left {
-  /* scaling the font size with the view width */
-  font-size: min(2.31vw, .7em);
-  /* using ems so we can use font size to scale the whole section */
-  width: 60%;
-  height: auto;
-  display: block;
-  margin: 0 auto;
-}
-#about-author .right {
-    width: 35%;
-    height: auto;
-    display: block;
-    text-align: right;
-    vertical-align: top;
-    margin: 0 auto;
-}
+  
 #about-author .right img {
     width: 300px;
     height: auto;
-    border: solid 7px var(--primaryShade);
+    border: solid 7px var(--accent);
 }
 #about-author .cs-text {
     font-size: 16px;
@@ -204,18 +181,20 @@
 }
 /* Desktop - 1024px */
 @media only screen and (min-width: 64em) {
-  #sbs .cs-container {
+  #sbs .cs-container, #about-author .container {
     flex-flow: row;
     justify-content: space-between;
     gap: 3.25rem;
     align-items: flex-start;
   }
-  #sbs .cs-left {
+  #sbs .cs-left, #about-author .left {
     font-size: min(1.2vw, 1em);
     flex: auto;
   }
-  #sbs .cs-right {
+  #sbs .cs-right, #about-author .right {
     margin: 0;
+    width: 39.4375em;
+    
   }
 }
 /* Dark Mode */
@@ -311,12 +290,6 @@
   #cta {
     padding: 10.5rem 0;
   }
-  #about-author .left {
-      display: inline-block;
-    }
-    #about-author .right {
-        display: inline-block;
-    }
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
