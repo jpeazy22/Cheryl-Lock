@@ -203,6 +203,16 @@
     display: block;
     margin-right: 0.75rem;
   }
+  .banner {
+      background-color: #c0e013;
+      margin-bottom: 100px;
+  }
+  .banner_buttons {
+      padding-bottom: 15px;
+  }
+  .banner_buttons a {
+      margin: 0px 25px;
+  }
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
