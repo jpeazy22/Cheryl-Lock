@@ -13,7 +13,7 @@
     padding: var(--sectionPadding);
   }
   #about-author {
-    background: #C3BCCC;
+    /* background: #C3BCCC; */
     padding-top: 40px;
     padding-bottom: 0px;
   }
@@ -163,6 +163,20 @@
     margin-top: 35px;
   }
   
+  #video {
+      text-align: center;
+      padding: 30px 0px;
+      background-color: #c3bccc;
+  }
+  #video h2.cs-title {
+      color: var(--bodyTextColor);
+      margin: 40px 0px;
+      font-weight: lighter;
+      font-size: 2.5em;
+      font-weight: 900;
+      max-width: 50rem;
+      margin: 0 auto 1.5rem;
+  }
 #about-author .right img {
     width: 300px;
     height: auto;
