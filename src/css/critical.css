@@ -204,15 +204,26 @@
     margin-right: 0.75rem;
   }
   .banner {
-      background-color: #c0e013;
-      margin-bottom: 100px;
-  }
-  .banner_buttons {
-      padding-bottom: 15px;
-  }
-  .banner_buttons a {
-      margin: 0px 25px;
-  }
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 350px;
+    background-image: url('../assets/images/newBookBanner.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #c0e013;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Ensures the content (buttons) is aligned at the bottom */
+}
+.banner_buttons {
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally, if desired */
+}
+.banner_buttons a {
+    margin: 0 25px;
+}
 }
 /* Tablet - 768px */
 @media only screen and (min-width: 48em) {
@@ -254,6 +265,9 @@
 <--- -------------------------- -*/
 /* Mobile */
 @media only screen and (min-width: 0em) {
+    .banner {
+      height: 200px;
+    }
   .banner_buttons a {
       margin: 10px 3px;
   }
@@ -320,6 +334,9 @@
 }
 /* Inbetween */
 @media only screen and (min-width: 768px) {
+    .banner {
+      height: 320px;
+    }
   .services {
     font-size: min(1.8vw, 1em);
     display: flex;
@@ -334,7 +351,10 @@
 }
 /* Large Desktop */
 @media only screen and (min-width: 1300px) {
-  .services {
+    .banner {
+      height: 350px;
+    }
+    .services {
     padding: 3.125em 5em;
   }
   .services .card {
