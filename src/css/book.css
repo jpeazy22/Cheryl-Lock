@@ -326,6 +326,9 @@
     width: 39.4375em;
     
   }
+  .carousel {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
