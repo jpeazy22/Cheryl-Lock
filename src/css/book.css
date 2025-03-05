@@ -307,6 +307,8 @@
     }
     #party .cs-text a {
         color: var(--primary);
+        font-size: 16px;
+        text-decoration: none;
     }
 }
 /* Desktop - 1024px */
