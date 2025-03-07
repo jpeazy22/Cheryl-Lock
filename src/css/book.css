@@ -184,6 +184,7 @@
       padding: 2rem;
       background-color: var(--primaryShade);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding-bottom: 75px;
   }
 
   .testimonials h2 {
@@ -196,6 +197,16 @@
       color: var(--primary);
       margin: 1.5rem 0 2.5rem 0;
       display: block;
+  }
+  .testimonials img {
+      width: 150px;
+      margin-bottom: 10px;
+  }
+  .testimonials a {
+      font-size: 12px;
+  }
+  .testimonials a h3:hover {
+      color: var(--bodyTextColor);
   }
 
   /* Carousel Grid */
