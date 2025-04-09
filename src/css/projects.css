@@ -146,6 +146,9 @@
 	  border-right: 2px solid #fff;
 	  color: var(--primaryShade);
   }
+  .center {
+      text-align: center;
+  }
   /*-- -------------------------- -->
   <---    Special Content Styles    -->
   <--- -------------------------- -*/  
