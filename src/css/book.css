@@ -104,10 +104,12 @@
     position: relative;
   }
   #sbs .badge {
-      text-align: center;
       padding-top: 15px;
   }
-  #sbs .badge img {
+  #sbs img.finalist {
+      width: 220px;
+  }
+  #sbs img {
       width: 170px;
   }
   #sbs h2 {
@@ -377,6 +379,9 @@
   }
   body.dark-mode #sbs .cs-quote-icon {
     opacity: .2;
+  }
+  #sbs .badge {
+      text-align: center;
   }
 }
 /*-- -------------------------- -->
