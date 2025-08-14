@@ -257,6 +257,16 @@
       color: var(--primary);
       margin-top: 0.5rem;
   }
+  .testimonial h4 a {
+      font-size: 0.9rem;
+      color: var(--primary);
+      margin-top: 0.5rem;
+  }
+  .testimonial h4 a:hover {
+      font-size: 0.9rem;
+      color: var(--bodyTextColor);
+      margin-top: 0.5rem;
+  }
 
     #about-author .right img {
         width: 300px;
