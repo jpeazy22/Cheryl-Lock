@@ -207,10 +207,10 @@
     max-width: 1200px;
     margin: 0 auto;
     height: 350px;
-    background-image: url('../assets/images/newBookBanner.svg');
+    background-image: url('../assets/images/NewReleaseBannerBrownBarn.svg');
     background-size: contain;
     background-repeat: no-repeat;
-    background-color: #c0e013;
+    background-color: #535025;
     margin-bottom: 100px;
     display: flex;
     flex-direction: column;
