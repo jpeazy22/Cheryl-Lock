@@ -3,7 +3,7 @@ layout: 'base.html'
 metaTitle: "Writer, Editor & Content Creator | Cheryl Lock"
 description: 'Cheryl Lock is a professional writer. Her stories have been syndicated all over including Business Insider and USA Today. Hire her today to craft your story!'
 tagTitle: 'Book'
-preloadCSS: '/css/books.css'
+preloadCSS: '/css/thebooks.css'
 permalink: 'books/'
 eleventyNavigation:
      key: Books
@@ -22,12 +22,57 @@ eleventyNavigation:
 </section>
 
 <!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+<section id="services" class="services">
+	<div class="card">
+  		<a href="#barn">
+  			<picture>
+                <img src="../assets/images/cover.png" alt="Brown Barn book cover">
+  			</picture>
+  		</a>
+  		<p class="cs-topper">Children's Book</p>
+  		<p>The Party in the Old Brown Barn</p>
+  	</div>
+  	<div class="card">
+  		<a href="#grace">
+  			<picture>
+  				<img src="../assets/images/bookCoverFront.png" alt="Grace retraces her day book cover">
+  			</picture>
+  		</a>
+  		<p class="cs-topper">Children's Book</p>
+  		<p>Grace Retraces Her Day</p>
+  	</div>
+    <div class="card">
+  		<a href="#party">
+  			<picture>
+  				<img src="../assets/images/partyThumbnail.png" alt="party decorations">
+  			</picture>
+  		</a>
+  		<p class="cs-topper">Parties</p>
+  		<p>Book a Birthday Celebration!</p>
+  	</div>
+  	<div class="card">
+  		<a href="#ebook">
+  			<picture>
+                <img src="../assets/images/FCKlogo.png" alt="Financial Caregiver Kit cover">
+
+  			</picture>
+  		</a>
+  		<p class="cs-topper">eBook</p>
+  		<p>The Financial Caregiver Kit</p>
+  	</div>
+</section>
+
+
+<!-- ============================================ -->
 <!--                 Side By Side                 -->
 <!-- ============================================ -->
 
 <!-- Party in the Brown Barn -->
 
-<section id="sbs">
+<div id="barn" class="anchor-target">
+    <section id="sbs">
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
@@ -48,48 +93,50 @@ eleventyNavigation:
         <p class="cs-topper">COMING SOON!!!</p>
 	</div>
   </div>
-</section>
-
+    </section>
+</div>
 
 <hr>
 
 <!-- Grace Retraces her Day -->
-<section id="sbs">
-  <div class="cs-container">
-    <!-- Left Image Section -->
-    <div class="cs-left">
-		{% image './src/images/bookCoverFront.png', 'book cover', 'cs-picture cs-picture1', 'lazy'%}
-    </div>
-    <!-- Right Content Section-->
-	<div class="cs-right">
-		<h2 class="cs-title">Grace Retraces Her Day</h2>
-        <p class="cs-topper">By Cheryl Lock</p>
-        <p><span class="cs-text">FORMAT: Hardcover, Paperback, eBook</span></p>
-        <p class="badge"> 
-            <a href="https://literaryglobal.com/" target="_blank">
-                <img src="../assets/images/LGCBA-FINALIST.png" alt="Book Finalist Badge" class="finalist">
-            </a>
-            <a href="https://americanwritingawards.com/childrens-book-intl" target="_blank">
-                <img src="../assets/images/bookFinalistBadge.png" alt="Book Finalist Badge" class="badge">
-            </a>
-        </p>
-        <a href="https://a.co/d/815nhs0" target="_blank" class="button-solid">Buy on Amazon</a>
-        <a href="https://www.barnesandnoble.com/w/grace-retraces-her-day-cheryl-lock/1146309141?ean=9781963844832" target="_blank" class="button-solid">Buy on Barnes & Noble</a>
-        <a href="https://www.booksamillion.com/p/Grace-Retraces-Her-Day/Cheryl-Lock/9781963844832" target="_blank" class="button-solid">Buy on Books-A-Million</a>
-        <p class="cs-text">
-        </p>
-        <h2><em>"Retrace your steps,” said Mom. <br />So, Grace is making the rounds.</em></h2>
-        <p class="cs-text">When Grace misplaces her beloved toy caterpillar, she brings us along on a magical journey through her day to find it. As we walk through Grace's world, both she and the reader discover that sometimes the most important things are found in the most unexpected places.
-        </p>
-        <p class="cs-text">Perfect for young children of all ages, this picture book invites readers to dive into Grace’s world of make-believe, teaching them valuable life lessons of imagination, adventure and play along the way.
-		</p>
-        <span class="cs-topper">Why You’ll Love It</span>
-        <p class="cs-text">
-            <em>Grace Retraces Her Day</em> is more than just a story about a lost toy. It's a celebration of childhood curiosity and the power of imagination. Through playful storytelling and vibrant illustrations, this heartwarming book helps children understand problem-solving, compromise, and the joy of family. The book was a finalist in the American Writing Awards Children's Book International contest in the "adventure" category, and the 2025 Literary Global Children's Book Awards in the "realistic fiction" category.
-        </p>
-	</div>
-  </div>
-</section>
+<div id="grace" class="anchor-target">
+    <section id="sbs">
+      <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+    		{% image './src/images/bookCoverFront.png', 'book cover', 'cs-picture cs-picture1', 'lazy'%}
+        </div>
+        <!-- Right Content Section-->
+    	<div class="cs-right">
+    		<h2 class="cs-title">Grace Retraces Her Day</h2>
+            <p class="cs-topper">By Cheryl Lock</p>
+            <p><span class="cs-text">FORMAT: Hardcover, Paperback, eBook</span></p>
+            <p class="badge"> 
+                <a href="https://literaryglobal.com/" target="_blank">
+                    <img src="../assets/images/LGCBA-FINALIST.png" alt="Book Finalist Badge" class="finalist">
+                </a>
+                <a href="https://americanwritingawards.com/childrens-book-intl" target="_blank">
+                    <img src="../assets/images/bookFinalistBadge.png" alt="Book Finalist Badge" class="badge">
+                </a>
+            </p>
+            <a href="https://a.co/d/815nhs0" target="_blank" class="button-solid">Buy on Amazon</a>
+            <a href="https://www.barnesandnoble.com/w/grace-retraces-her-day-cheryl-lock/1146309141?ean=9781963844832" target="_blank" class="button-solid">Buy on Barnes & Noble</a>
+            <a href="https://www.booksamillion.com/p/Grace-Retraces-Her-Day/Cheryl-Lock/9781963844832" target="_blank" class="button-solid">Buy on Books-A-Million</a>
+            <p class="cs-text">
+            </p>
+            <h2><em>"Retrace your steps,” said Mom. <br />So, Grace is making the rounds.</em></h2>
+            <p class="cs-text">When Grace misplaces her beloved toy caterpillar, she brings us along on a magical journey through her day to find it. As we walk through Grace's world, both she and the reader discover that sometimes the most important things are found in the most unexpected places.
+            </p>
+            <p class="cs-text">Perfect for young children of all ages, this picture book invites readers to dive into Grace’s world of make-believe, teaching them valuable life lessons of imagination, adventure and play along the way.
+    		</p>
+            <span class="cs-topper">Why You’ll Love It</span>
+            <p class="cs-text">
+                <em>Grace Retraces Her Day</em> is more than just a story about a lost toy. It's a celebration of childhood curiosity and the power of imagination. Through playful storytelling and vibrant illustrations, this heartwarming book helps children understand problem-solving, compromise, and the joy of family. The book was a finalist in the American Writing Awards Children's Book International contest in the "adventure" category, and the 2025 Literary Global Children's Book Awards in the "realistic fiction" category.
+            </p>
+    	</div>
+      </div>
+    </section>
+</div>
 
 <section id="video">
     <h2 class="cs-title">The Big Day!</h2>
@@ -167,6 +214,45 @@ eleventyNavigation:
         </div>
     </div>
 </section>
+
+<!-- ============================================ -->
+<!--                         eBook                -->
+<!-- ============================================ -->
+
+<div id="ebook" class="anchor-target">
+    <section id="sbs">
+      <div class="cs-container">
+        <!-- Left Image Section -->
+        <div class="cs-left">
+    		{% image './src/images/FCKcover.png', 'book cover', 'cs-picture cs-picture1', 'lazy'%}
+        </div>
+        <!-- Right Content Section-->
+    	<div class="cs-right">
+    		<h2 class="cs-title">The Financial Caregiver Kit </h2>
+            <p class="cs-topper">By Cheryl Lock</p>
+            <p><span class="cs-text">FORMAT: eBook</span></p>
+            
+            
+            <p class="cs-text">
+            </p>
+            <h2><em>Over 60% of family caregivers help with paying bills, managing bank accounts, or handling insurance paperwork — often under pressure.</em></h2>
+            <p class="cs-text">The Financial Caregiver Kit is a practical guide designed specifically for adult children and family members who find themselves managing finances for aging parents or loved ones.
+            </p>
+            <p class="cs-text">I created this guide, with insights from former LegalZoom executives, to combine real-world caregiving experience with deep financial and legal expertise.
+    		</p>
+            <p class="cs-text">
+                This isn't just another financial planning book — it's a compassionate companion that understands the unique decisions, emotions, and responsibilities you face as a financial caregiver. Inside the book you'll find:
+                <ul>
+                    <li>Templates and checklists</li>
+                    <li>Financial + Legal Basics in Plain English</li>
+                    <li>Scripts for Hard Conversations</li>
+                </ul>
+            </p>
+            <a href="https://www.financialcaregiverkit.com/" target="_blank" class="button-solid">Learn more (and view sample chapters) here.</a>
+    	</div>
+      </div>
+    </section>
+</div>
 
 <!-- ============================================ -->
 <!--                 About the Author             -->

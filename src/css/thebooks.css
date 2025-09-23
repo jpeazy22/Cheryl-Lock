@@ -1,0 +1,555 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apply top offset for anchored sections */
+.anchor-target { scroll-margin-top: 130px; }
+
+/* Respect reduced motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
+ul li {
+    font-size: var(--bodyFontSize);
+    line-height: 1.0em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--primary);
+    margin-left: 40px;
+}
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0em) {
+    .services {
+          margin-top: -20px;
+    }
+    .services .card picture img {
+        width: 5em;
+        height: 5em;
+        border-radius: 60px;
+    }
+    .services .card p.cs-topper {
+    color: var(--primary);
+}
+  #sbs, #about-author {
+    padding: var(--sectionPadding);
+  }
+  #about-author {
+    /* background: #C3BCCC; */
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+  #sbs .cs-container, #about-author .container {
+    width: 100%;
+    max-width: 80rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 2.5rem;
+  }
+  #sbs .cs-left, #about-author .right {
+    /* scaling the font size with the view width */
+    font-size: min(2.31vw, .7em);
+    /* using ems so we can use font size to scale the whole section */
+    /* width: 39.4375em; */
+    height: 44em;
+    position: relative;
+    display: block;
+  }
+  #sbs img.brown-barn {
+    max-width: 942px;
+    max-height: 750px;
+    width: 100%;
+    height: 100%;
+  }
+  #sbs .cs-picture {
+    /* clips img tag corners */
+    overflow: hidden;
+    position: absolute;
+    display: block;
+  }
+  #sbs .cs-picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* makes image act like a background image */
+    object-fit: fit;
+  }
+  #sbs .cs-picture1 {
+    width: 32.625em;
+    height: 44.3125em;
+    position: relative;
+    margin: 0 auto;
+    left: 0;
+    top: 0;
+	border: clamp(0.375em, 1.5vw, 0.25em) solid #F0D9CB;
+  }
+  #sbs .cs-picture2 {
+    width: 18.875em;
+    height: 19em;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 40px;
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.25em) solid #F0D9CB;
+    right: 0;
+    bottom: 0;
+  }
+  #sbs .cs-right, #about-author .left {
+    margin: auto;
+    max-width: 33.875rem;
+  }
+  #sbs .cs-right a {
+	color: #ffffff;
+	text-decoration: none; 
+  }
+  #sbs .cs-right a:hover {
+   color: #ffffff;
+  }
+  #sbs .cs-topper, .cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: .1em;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+  }
+  #sbs .cs-title {
+    font-size: 2.5em;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: left;
+    max-width: 50rem;
+    margin: 0 auto 1rem;
+    color: var(--secondary);
+    position: relative;
+  }
+  #sbs .badge {
+      padding-top: 15px;
+  }
+  #sbs img.finalist {
+      width: 220px;
+  }
+  #sbs img {
+      width: 170px;
+  }
+  #sbs h2 {
+      color: var(--bodyTextColor);
+      margin: 40px 0px;
+      font-weight: lighter;
+      text-align: center;
+  }
+  #sbs .cs-text {
+    font-size: var(--bodyFontSize);
+    line-height: 1.5em;
+    text-align: left;
+    width: 100%;
+    max-width: 46.875rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: var(--bodyTextColor);
+  }
+  #sbs .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  #sbs .cs-flex-group {
+    /* 16px - 32px */
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #F7F7F7;
+    border-radius: 1rem;
+    position: relative;
+  }
+  #sbs .cs-flex-p {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    line-height: 1.5em;
+    margin: 0 0 1rem;
+    color: #767676;
+  }
+  #sbs .cs-name {
+    font-size: 1rem;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 0 0 0.25rem;
+    color: var(--headerColor);
+    display: block;
+  }
+  #sbs .cs-job {
+    font-size: 0.875rem;
+    line-height: 1.5em;
+    color: #767676;
+    display: block;
+  }
+  #sbs .cs-quote-icon {
+    /* 60px - 136px */
+    width: clamp(3.75rem, 10vw, 8.5rem);
+    height: auto;
+    position: absolute;
+    bottom: 0rem;
+    /* 16px - 32px */
+    right: clamp(1rem, 4vw, 2rem);
+  }
+  #sbs .button-solid {
+    margin-top: 35px;
+  }
+  
+  #video {
+      text-align: center;
+      padding: 30px 0px;
+      background-color: var(--primary);
+  }
+  #video h2.cs-title {
+      color: var(--bodyTextColor);
+      margin: 40px 0px;
+      font-weight: lighter;
+      font-size: 2.5em;
+      font-weight: 900;
+      max-width: 50rem;
+      margin: 0 auto 1.5rem;
+  }
+  /* Testimonials Section */
+  .testimonials {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--primaryShade);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding-bottom: 75px;
+  }
+
+  .testimonials h2 {
+      font-size: 24px;
+      line-height: 1.2em;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: var(--primary);
+      margin: 1.5rem 0 2.5rem 0;
+      display: block;
+  }
+  .testimonials img {
+      width: 150px;
+      margin-bottom: 10px;
+  }
+  .testimonials a {
+      font-size: 12px;
+  }
+  .testimonials a h3:hover {
+      color: var(--bodyTextColor);
+  }
+
+  /* Carousel Grid */
+  .carousel {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2.5rem;
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+  }
+
+  /* Testimonial Cards */
+  .testimonial {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      text-align: left;
+      transition: transform 0.3s ease;
+  }
+
+  .testimonial:hover {
+      transform: scale(1.05);
+  }
+
+  /* Text Styles */
+  .testimonial p {
+      font-size: 1rem;
+      font-style: italic;
+      margin-bottom: 0.5rem;
+      color: var(--bodyTextColor);
+  }
+
+  .testimonial h4 {
+      font-size: 0.9rem;
+      color: var(--primary);
+      margin-top: 0.5rem;
+  }
+  .testimonial h4 a {
+      font-size: 0.9rem;
+      color: var(--primary);
+      margin-top: 0.5rem;
+  }
+  .testimonial h4 a:hover {
+      font-size: 0.9rem;
+      color: var(--bodyTextColor);
+      margin-top: 0.5rem;
+  }
+
+    #about-author .right img {
+        width: 300px;
+        height: auto;
+        border: solid 7px var(--accent);
+    }
+    #about-author .cs-text {
+        font-size: 16px;
+            line-height: 1.5em;
+            text-align: left;
+            width: 100%;
+            max-width: 46.875rem;
+            margin: 1rem auto;
+            margin-bottom: 1rem;
+            color: var(--bodyTextColor);
+    }
+    #party {
+        background: url("/assets/images/birthday-party-background.jpg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+    #party .container {
+        padding-top: 300px;
+        position: relative;
+        width: 92%;
+        margin: auto;
+        max-width: 1200px;
+        text-align: center;
+    }
+    #party .section {
+        display: inline-block;
+        margin: 20px 0px 80px 0px;
+        width: 45%;
+        vertical-align: top;
+    }
+    #party img {
+        display: inline-block;
+        width: auto;
+        height: 250px;
+        border-radius: 30px;
+        padding: 15px;
+    }
+    #party .cs-title {
+        font-size: 2.5em;
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: center;
+        max-width: 50rem;
+        margin: 0 auto;
+        color: var(--secondary);
+        position: relative;
+    }
+    #party .cs-topper {
+        text-align: center;
+        margin-top: 30px;
+    }
+    #party .cs-text {
+        font-size: 16px;
+        line-height: 1.5em;
+        text-align: left;
+        width: 100%;
+        max-width: 46.875rem;
+        margin: 1rem auto;
+        margin-bottom: 1rem;
+        color: var(--bodyTextColor);
+    }
+    #party .cs-text a {
+        color: var(--primary);
+        font-size: 16px;
+        text-decoration: none;
+    }
+    #ebook {
+        background: url("/assets/images/FCKbackground.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: auto;
+    }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64em) {
+  #sbs .cs-container, #about-author .container {
+    flex-flow: row;
+    justify-content: space-between;
+    gap: 3.25rem;
+    align-items: flex-start;
+  }
+  #sbs .cs-left, #about-author .left {
+    font-size: min(1.2vw, 1em);
+    flex: auto;
+  }
+  #sbs .cs-right, #about-author .right {
+    margin: 0;
+    width: 39.4375em;
+    
+  }
+  .carousel {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #sbs .cs-left:before,
+  body.dark-mode #sbs .cs-left:after {
+    background: var(--accent);
+  }
+  body.dark-mode #sbs .cs-picture2 {
+    background-color: var(--dark);
+    /* 6px - 12px */
+    border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
+  }
+  body.dark-mode #sbs .cs-title,
+  body.dark-mode #sbs .cs-text,
+  body.dark-mode #sbs .cs-h3,
+  body.dark-mode #sbs .cs-flex-p,
+  body.dark-mode #sbs .cs-name {
+    color: var(--bodyTextColorWhite);
+  }
+  body.dark-mode #sbs .cs-flex-group {
+    background-color: var(--accent);
+  }
+  body.dark-mode #sbs .cs-job {
+    color: var(--bodyTextColorWhite);
+    opacity: .8;
+  }
+  body.dark-mode #sbs .cs-quote-icon {
+    opacity: .2;
+  }
+  #sbs .badge {
+      text-align: center;
+  }
+}
+/*-- -------------------------- -->
+<---    Final Call To Action    -->
+<--- -------------------------- -*/
+/* Mobile */
+@media only screen and (min-width: 0em) {
+  #cta {
+    position: relative;
+    padding: 3.125rem 0;
+  }
+  #cta:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #cta .container {
+    text-align: center;
+  }
+  #cta picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+  }
+  #cta picture img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  #cta .title {
+    font-weight: 900;
+    font-size: min(9vw, 3rem);
+    line-height: 1.20833333;
+    color: #fff;
+    position: relative;
+    margin-bottom: 2.25rem;
+    text-align: center;
+  }
+  #cta p {
+    color: #fff;
+    text-align: center;
+    opacity: 1;
+    margin: auto;
+    margin-bottom: 2.25rem;
+    width: 96%;
+    max-width: 37.375rem;
+  }
+}
+/* Small Desktop */
+@media only screen and (min-width: 64em) {
+  #cta {
+    padding: 10.5rem 0;
+  }
+}
+/* Large Desktop */
+@media only screen and (min-width: 1300px) {
+  #cta {
+    position: relative;
+    margin-top: 6.25rem;
+  }
+  #cta:before {
+    display: none;
+  }
+  #cta:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 69.25rem;
+    width: 125rem;
+    background: url("/assets/svgs/cta-squares.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -3;
+  }
+  #cta .container {
+    width: 90.0625%;
+    margin: auto;
+  }
+  #cta picture {
+    width: 90.0625%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  #cta picture:before {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: .7;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+}
+/* Dark Mode */
+@media only screen and (min-width: 0em) {
+  body.dark-mode #cta:after {
+    display: none;
+  }
+}
+
