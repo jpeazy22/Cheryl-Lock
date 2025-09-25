@@ -64,11 +64,14 @@ ul li {
     position: relative;
     display: block;
   }
+  #barn {
+      height: auto;
+  }
   #sbs img.brown-barn {
-    max-width: 942px;
+    max-width: 550px;
     max-height: 750px;
     width: 100%;
-    height: 100%;
+    height: auto;
   }
   #sbs .cs-picture {
     /* clips img tag corners */
@@ -396,7 +399,9 @@ ul li {
   #sbs .cs-right, #about-author .right {
     margin: 0;
     width: 39.4375em;
-    
+  }
+  #barn {
+      height: 700px;
   }
   .carousel {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
