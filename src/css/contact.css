@@ -37,6 +37,13 @@
     margin-bottom: clamp(0.5rem, 1.4vw, 0.75rem);
     display: block;
   }
+  .cs-content a {
+	color: var(--primary);
+	text-decoration: none; 
+  }
+  .cs-content a:hover {
+   color: var(--primaryShade);
+  }
   #cs-contact .cs-title {
     font-size: var(--headerFontSize);
     font-weight: 900;
@@ -94,6 +101,26 @@
   #cs-contact #cs-form input:hover,
   #cs-contact #cs-form textarea:hover {
     border: 1px solid var(--primary);
+  }
+  .checkbox {
+      margin-bottom: 30px;
+      line-height: 30px;
+      
+  }
+  .checkbox p {
+      color: darken;
+      display: inline;
+      line-height: 30px;
+      vertical-align: middle;
+  }
+  #cs-contact #cs-form input#signed-copy {
+      width: 30px;
+      height: 30px;
+      background-color: var(--primary);
+      border: 1px solid #B4B2C7;
+      margin-top:-1px;
+      line-height: 30px;
+      vertical-align: middle;
   }
   #cs-contact #cs-form textarea {
     font-family: inherit;

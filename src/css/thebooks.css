@@ -36,7 +36,35 @@ ul li {
     }
     .services .card p.cs-topper {
     color: var(--primary);
-}
+    }
+    .local_stores {
+        font-size: 10px;
+        width: 98%;
+        border-radius: 0.3125em;
+        /* margin: auto; */
+        margin: -7.4375em auto 10px auto;
+        position: relative;
+        z-index: 100;
+        background: #fff;
+        width: 90%;
+        max-width: 92.5em;
+        padding: 10px 10px 15px 10px;
+        border-top: 0.375em solid var(--primary);
+        box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
+        margin-bottom: 3.125em;
+    }
+    .local_stores p {
+        font-size: 14px;
+    }
+    
+    .local_stores p a {
+        text-decoration: none;
+        color: var(--primary);
+        font-size:  14px;
+    }
+    .local_stores p a:hover {
+        color: var(--primaryShade);
+    }
   #sbs, #about-author {
     padding: var(--sectionPadding);
   }
@@ -401,7 +429,7 @@ ul li {
     width: 39.4375em;
   }
   #barn {
-      height: 700px;
+      /* height: 700px; */
   }
   .carousel {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
