@@ -162,60 +162,83 @@ eleventyNavigation:
     </section>
 </div>
 
-<section id="video">
-    <h2 class="cs-title">The Big Day!</h2>
-    <iframe title="vimeo-player" src="https://player.vimeo.com/video/1012528980?h=10caeab248" width="260" height="360" frameborder="0"    allowfullscreen></iframe>
-</section>
-
 <!-- ============================================ -->
-<!--                 Testimonials                 -->
+<!--                Video & Testimonials                 -->
 <!-- ============================================ -->
 
-<section class="testimonials">
-    <h2>Press & Praise for <em>Grace Retraces Her Day</em></h2>
-    <div class="carousel">
-        <div class="testimonial">
-            <p>"'Grace Retraces Her Day' is a heartwarming children’s book that delights readers with its charming narrative and beautifully illustrated pages."</p>
-            <h4>- <a href="https://www.dailycamera.com/2025/07/24/colorado-author-spotlight-titles-include-shakespeares-potential-to-address-youth-violence-from-a-csf-staffer-and-more/" target="_blank">Boulder Daily Camera</a></h4>
+<div class="video_container">
+    <div class="two-column-section">
+        <!-- Video Column -->
+        <div class="video-column">
+            <h2 class="cs-title">The Big Day!</h2>
+            <div class="video-wrapper">
+                <iframe title="vimeo-player" src="https://player.vimeo.com/video/1012528980?h=10caeab248" width="260" height="360" frameborder="0"    allowfullscreen></iframe>
+            </div>
         </div>
-        <div class="testimonial">
-            <img src="../assets/images/macaroniKidLogo.png" alt="Publication Logo" class="press-logo">
-            <a href="https://arvada.macaronikid.com/articles/679e5a5cdab9ab6be055bd34/discover-the-delightful-adventure-of-grace-retraces-her-day" target="_blank">
-                <h3>"Discover the Delightful Adventure of Grace Retraces Her Day"</h3>
-            </a>
-            <p>"As a parent, there’s nothing quite like the joy of reading a book with your child(ren) that captivates their imagination, makes them giggle..."</p>
-            <h4>- By Cate Camacho, Publisher of Arvada.Macaronikid.com, February 2025</h4>
+        
+        <!-- Testimonials Column -->
+        
+        <div class="testimonials-column">
+            <h2>Press & Praise for <em>Grace Retraces Her Day</em></h2>
+            <div class="carousel-container">
+                <button class="carousel-arrow prev" onclick="changeTestimonial(-1)">‹</button>
+                <div class="carousel">
+                    <div class="testimonial active">
+                        <p>"'Grace Retraces Her Day' is a heartwarming children’s book that delights readers with its charming narrative and beautifully illustrated pages."</p>
+                        <h4>- <a href="https://www.dailycamera.com/2025/07/24/colorado-author-spotlight-titles-include-shakespeares-potential-to-address-youth-violence-from-a-csf-staffer-and-more/" target="_blank">Boulder Daily Camera</a></h4>
+                    </div>
+                    <div class="testimonial">
+                        <img src="../assets/images/macaroniKidLogo.png" alt="Publication Logo" class="press-logo">
+                        <a href="https://arvada.macaronikid.com/articles/679e5a5cdab9ab6be055bd34/discover-the-delightful-adventure-of-grace-retraces-her-day" target="_blank">
+                            <h3>"Discover the Delightful Adventure of Grace Retraces Her Day"</h3>
+                        </a>
+                        <p>"As a parent, there’s nothing quite like the joy of reading a book with your child(ren) that captivates their imagination, makes them giggle..."</p>
+                        <h4>- By Cate Camacho, Publisher of Arvada.Macaronikid.com, February 2025</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"A story any kid can relate to - A cute, quick read for any kid who has a toy they love - and can't sleep without."</p>
+                        <h4>- Libby Kane, Executive Editor, Personal Finance Insider</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Heartwarming story. Grace's dilemma will be instantly relatable to young readers and their parents alike. Warm and cheerful, this book is a delight."</p>
+                        <h4>- Daphne Grab, librarian, Warder Elementary</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Adorable! A story about a little girl who loses her lovey (and finds it). It's told in such a charming way and precisely how a preschooler sees her world and all the characters in it."</p>
+                        <h4>- Chandra Turner, Founder & CEO of The Talent Fairy, former Parents magazine executive editor</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Modern Knuffle Bunny. An adorable rhyming story about a lost plush caterpillar grips kids even more than the classic Knuffle Bunny because it's set at home rather than a laundromat. Kids are going to root for Grace to find her caterpillar!"</p>
+                        <h4>- Karen Cicero, special projects manager, author of Good Housekeeping's "Kids' Book Awards", former Parents magazine editor</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"A story that came to life! I am so fortunate to be the teacher of Grace, who this story is about! Our school was lucky enough to have Cheryl come and read her book to us. The students absolutely loved the book!! The story itself was not only so adorable and kept the kids engaged, but it also inspired students to write their own stories. Cheryl explained that this story happened in real life and that's where a lot of stories can come from. She encouraged students to find their voice to write and share with the world and this book is a great example of a story coming to life!"</p>
+                        <h4>- Jenn Magana, 1st grade teacher, Warder Elementary</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"Affordable, reliable, and simply the best service I've used."</p>
+                        <h4>- Michael Lee</h4>
+                    </div>
+                    <div class="testimonial">
+                        <p>"The quality of service is top-notch. Can't recommend enough."</p>
+                        <h4>- Sarah Wilson</h4>
+                    </div>
+                </div>
+                <button class="carousel-arrow next" onclick="changeTestimonial(1)">›</button>
+            </div>
+            
+            <div class="carousel-dots">
+                <span class="dot active" onclick="goToTestimonial(0)"></span>
+                <span class="dot" onclick="goToTestimonial(1)"></span>
+                <span class="dot" onclick="goToTestimonial(2)"></span>
+                <span class="dot" onclick="goToTestimonial(3)"></span>
+                <span class="dot" onclick="goToTestimonial(4)"></span>
+                <span class="dot" onclick="goToTestimonial(5)"></span>
+                <span class="dot" onclick="goToTestimonial(6)"></span>
+            </div>
         </div>
-        <div class="testimonial">
-            <p>"A story any kid can relate to - A cute, quick read for any kid who has a toy they love - and can't sleep without."</p>
-            <h4>- Libby Kane, Executive Editor, Personal Finance Insider</h4>
-        </div>
-        <div class="testimonial">
-            <p>"Heartwarming story. Grace's dilemma will be instantly relatable to young readers and their parents alike. Warm and cheerful, this book is a delight."</p>
-            <h4>- Daphne Grab, librarian, Warder Elementary</h4>
-        </div>
-        <div class="testimonial">
-            <p>"Adorable! A story about a little girl who loses her lovey (and finds it). It's told in such a charming way and precisely how a preschooler sees her world and all the characters in it."</p>
-            <h4>- Chandra Turner, Founder & CEO of The Talent Fairy, former Parents magazine executive editor</h4>
-        </div>
-        <div class="testimonial">
-            <p>"Modern Knuffle Bunny. An adorable rhyming story about a lost plush caterpillar grips kids even more than the classic Knuffle Bunny because it's set at home rather than a laundromat. Kids are going to root for Grace to find her caterpillar!"</p>
-            <h4>- Karen Cicero, special projects manager, author of Good Housekeeping's "Kids' Book Awards", former Parents magazine editor</h4>
-        </div>
-        <div class="testimonial">
-            <p>"A story that came to life! I am so fortunate to be the teacher of Grace, who this story is about! Our school was lucky enough to have Cheryl come and read her book to us. The students absolutely loved the book!! The story itself was not only so adorable and kept the kids engaged, but it also inspired students to write their own stories. Cheryl explained that this story happened in real life and that's where a lot of stories can come from. She encouraged students to find their voice to write and share with the world and this book is a great example of a story coming to life!"</p>
-            <h4>- Jenn Magana, 1st grade teacher, Warder Elementary</h4>
-        </div>
-        <!-- <div class="testimonial">
-            <p>"Affordable, reliable, and simply the best service I've used."</p>
-            <h4>- Michael Lee</h4>
-        </div>
-        <div class="testimonial">
-            <p>"The quality of service is top-notch. Can't recommend enough."</p>
-            <h4>- Sarah Wilson</h4>
-        </div> -->
     </div>
-</section>
+</div>
 
 <!-- ============================================ -->
 <!--                Book Craft Party              -->
@@ -295,3 +318,34 @@ eleventyNavigation:
     </div>
   </div>
 </section>
+
+<script>
+        let currentTestimonial = 0;
+        const testimonials = document.querySelectorAll('.testimonial');
+        const dots = document.querySelectorAll('.dot');
+
+        function showTestimonial(index) {
+            testimonials.forEach(t => t.classList.remove('active'));
+            dots.forEach(d => d.classList.remove('active'));
+            
+            testimonials[index].classList.add('active');
+            dots[index].classList.add('active');
+        }
+
+        function changeTestimonial(direction) {
+            currentTestimonial += direction;
+            
+            if (currentTestimonial < 0) {
+                currentTestimonial = testimonials.length - 1;
+            } else if (currentTestimonial >= testimonials.length) {
+                currentTestimonial = 0;
+            }
+            
+            showTestimonial(currentTestimonial);
+        }
+
+        function goToTestimonial(index) {
+            currentTestimonial = index;
+            showTestimonial(currentTestimonial);
+        }
+    </script>
