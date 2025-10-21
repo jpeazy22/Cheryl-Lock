@@ -21,7 +21,7 @@ ul li {
     margin: 0 auto;
     margin-bottom: 1rem;
     color: var(--primary);
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 /* Mobile - 360px */
@@ -179,10 +179,10 @@ ul li {
       padding-top: 15px;
   }
   #sbs img.finalist {
-      width: 220px;
+      width: 150px;
   }
-  #sbs img {
-      width: 170px;
+  #sbs img.finalist_two {
+      width: 120px;
   }
   #sbs h2 {
       color: var(--bodyTextColor);
@@ -255,57 +255,49 @@ ul li {
       grid-template-columns: 1fr 1.5fr;
       gap: 40px;
       align-items: start;
+      pading: 0px 10px;
   }
-  
   .video-column {
       text-align: center;
       margin-left: 10px;
   }
-  
   .video-column h2 {
       color: var(--bodyTextColor);
       margin: 40px 0px;
       font-weight: lighter;
-      font-size: 1.5em;
+      font-size: 2em;
       font-weight: 900;
       max-width: 50rem;
       margin: 0 auto 1.5rem;
       text-align: center;
   }
-
   .video-wrapper {
       overflow: hidden;
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.1);
   }
-
   .video-wrapper iframe {
       padding: 10px;
   }
-
   .testimonials-column h2 {
-      font-size: 1.5rem;
+      font-size: 2rem;
       color: #2c3e50;
       margin-bottom: 30px;
       text-align: center;
   }
-
   .testimonials-column h2 em {
       color: var(--primaryShade);
       font-style: italic;
   }
-
   .carousel-container {
       position: relative;
       padding: 0 60px;
   }
-
   .carousel {
       position: relative;
       overflow: hidden;
       min-height: 350px;
   }
-
   .testimonial {
       background: white;
       padding: 40px;
@@ -315,57 +307,47 @@ ul li {
       opacity: 0;
       transition: opacity 0.5s ease;
   }
-
   .testimonial.active {
       display: block;
       opacity: 1;
   }
-
   .testimonial p {
       font-size: 1.1rem;
       color: #555;
       margin-bottom: 20px;
       line-height: 1.8;
   }
-
   .testimonial h3 {
       font-size: 1.3rem;
-      color: #2c3e50;
+      color: var(--bodyTextColor);
       margin-bottom: 10px;
   }
-
-  .testimonial h3 a {
-      color: #3498db;
+  .testimonial a h3  {
+      color: var(--primary);
       text-decoration: none;
       transition: color 0.3s;
   }
-
-  .testimonial h3 a:hover {
+  .testimonial a h3:hover {
       color: var(--primaryShade);
   }
-
   .testimonial h4 {
       font-size: 0.95rem;
       color: #7f8c8d;
       font-weight: 500;
   }
-
   .testimonial h4 a {
-      color: #3498db;
+      color: var(--primary);
       text-decoration: none;
       transition: color 0.3s;
   }
-
   .testimonial h4 a:hover {
       color: var(--primaryShade);
   }
-
   .press-logo {
       max-width: 150px;
       height: auto;
       margin-bottom: 15px;
   }
-
   .carousel-arrow {
       position: absolute;
       top: 50%;
@@ -396,11 +378,11 @@ ul li {
   }
 
   .carousel-arrow.prev {
-      left: 0;
+      left: 5px;
   }
 
   .carousel-arrow.next {
-      right: 0;
+      right: 5px;
   }
 
   .carousel-dots {
@@ -532,7 +514,7 @@ ul li {
         height: auto;
     }
     #party .container {
-        padding-top: 300px;
+        padding-top: 90px;
         position: relative;
         width: 92%;
         margin: auto;
@@ -639,9 +621,6 @@ ul li {
   }
   body.dark-mode #sbs .cs-quote-icon {
     opacity: .2;
-  }
-  #sbs .badge {
-      text-align: center;
   }
 }
 /*-- -------------------------- -->
