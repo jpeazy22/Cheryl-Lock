@@ -1,0 +1,82 @@
+/* Make sure the page can grow */
+html, body { min-height: 100%; }
+
+#events {
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.intro {
+    margin: 50px 0px;
+    padding: 0px 5px 10px 5px;
+    border-bottom: 1px solid var(--primaryShade);
+}
+.intro .cs-topper {
+    font-size: var(--topperFontSize);
+        line-height: 1.2em;
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: .1em;
+        font-weight: 700;
+        color: var(--primary);
+        margin-bottom: 0.25rem;
+        display: block;
+}
+.intro .cs-title {
+    font-size: var(--headerFontSize);
+        font-weight: 900;
+        line-height: 1.2em;
+        text-align: left;
+        max-width: 50rem;
+        color: var(--secondary);
+        position: relative;
+}
+.events {
+  position: relative;
+  width: 100%;
+  height: 85vh; /* Takes 90% of the viewport height */
+  /* padding: 30px; */
+  box-sizing: border-box;
+  border-bottom: 1px solid var(--primaryShade);
+}
+
+#events iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#travels {
+    clear: both;
+    text-align: center;
+    margin-top: 40px;
+    height: 100px;
+}
+#travels h2 {
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2em;
+    color: var(--secondary);
+    position: relative;
+}
+#travels h2 a {
+    color: var(--primary);
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 1.2em;
+}
+
+/* Adjust height for smaller screens */
+@media (max-width: 1024px) {
+  #events {
+    height: 110vh; /* taller on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  #events {
+    height: 130vh; /* even taller on small devices */
+  }
+}
