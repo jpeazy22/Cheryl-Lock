@@ -35,7 +35,7 @@ html, body { min-height: 100%; }
 .events {
   position: relative;
   width: 100%;
-  height: 60vh; /* Takes 90% of the viewport height */
+  height: 95vh; /* Takes 90% of the viewport height */
   /* padding: 30px; */
   box-sizing: border-box;
   border-bottom: 1px solid var(--primaryShade);
@@ -48,38 +48,20 @@ html, body { min-height: 100%; }
   border: none;
 }
 
-#travels {
-    position:relative;
-    text-align: center;
-    margin-top: 40px;
-    height: 100px;
-}
-#travels h2 {
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 1.2em;
-    color: var(--secondary);
-}
-#travels h2 a {
-    color: var(--primary);
-    font-size: 30px;
-    font-weight: 900;
-    line-height: 1.2em;
-}
 
 /* Adjust height for smaller screens */
 @media (max-width: 1024px) {
   .events {
-    height: 85vh; /* taller on tablets */
+    height: 130vh; /* taller on tablets */
   }
 }
 
 @media (max-width: 768px) {
   .events {
-    height: 90vh; /* even taller on small devices */
+    height: 200vh; /* even taller on small devices */
   }
 @media (min-width: 500px) {
 .events {
-  height: 135vh; /* even taller on small devices */
+  height: 200vh; /* even taller on small devices */
 }
 }
