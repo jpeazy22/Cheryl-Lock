@@ -103,7 +103,8 @@
     border: 1px solid var(--primary);
   }
   .checkbox {
-      margin-bottom: 30px;
+      margin-bottom: 5px;
+      margin-top: 15px;
       line-height: 30px;
       
   }
