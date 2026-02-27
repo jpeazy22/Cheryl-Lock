@@ -96,7 +96,7 @@ ul li {
     font-size: min(2.31vw, .7em);
     /* using ems so we can use font size to scale the whole section */
     /* width: 39.4375em; */
-    height: 44em;
+    /* height: 44em; */
     position: relative;
     display: block;
   }
@@ -143,6 +143,66 @@ ul li {
     right: 0;
     bottom: 0;
   }
+  /* Brown barn testimonials */
+  p.review-title {
+      margin: 1.25rem auto;
+      text-align: center !important;
+  }
+  .brown-barn-media{
+  position: relative;
+  width: 100%;
+}
+  .brown-barn-testimonials{
+      margin: 1.25rem auto;
+      max-width: 420px;
+      text-align: center;
+      background: #c85fd74f;
+        padding: 20px;
+        border-radius: 10px;
+}
+
+.brown-barn-testimonials__slide{
+  display: none;
+  margin: 0;
+}
+
+.brown-barn-testimonials__slide.is-active{
+  display: block;
+}
+
+.brown-barn-testimonials__quote{
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 0.5rem 0;
+}
+
+.brown-barn-testimonials__author{
+  font-weight: 600;
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.brown-barn-testimonials__dots{
+  margin-top: 0.75rem;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.brown-barn-testimonials__dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--bodyTextColorWhite);
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.brown-barn-testimonials__dot.is-active{
+  background: var(--primary);
+}
   #sbs .cs-right, #about-author .left {
     margin: auto;
     max-width: 33.875rem;
@@ -621,6 +681,12 @@ ul li {
   }
   body.dark-mode #sbs .cs-quote-icon {
     opacity: .2;
+  }
+  body.dark-mode .brown-barn-testimonials {
+        background: var(--primaryShade);
+  }
+  body.dark-mode .testimonial p {
+      color: var(--bodyTextColor);
   }
 }
 /*-- -------------------------- -->

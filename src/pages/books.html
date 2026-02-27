@@ -99,7 +99,45 @@ eleventyNavigation:
   <div class="cs-container">
     <!-- Left Image Section -->
     <div class="cs-left">
-		<img src="../assets/images/cover.png" alt="Brown Barn book cover" class="brown-barn cs-picture cs-picture1">
+		<div class="brown-barn-media">
+            <img src="../assets/images/cover.png" alt="Brown Barn book cover" class="brown-barn cs-picture cs-picture1">
+        </div>
+        <p class="cs-topper review-title">Press & Praise</p>
+        <div id="brown-barn-testimonials" class="brown-barn-testimonials">
+            <div class="brown-barn-testimonials__slides">
+                <figure class="brown-barn-testimonials__slide is-active">
+                    <blockquote class="brown-barn-testimonials__quote">
+                        “With lively animals, fun rhymes and a touching story, Cheryl Lock has delivered another great book for kids, with the added bonus of bright illustrations from Taylor Miller that bring the story to life.”
+                    </blockquote>
+                    <figcaption class="brown-barn-testimonials__author">— Daphne Grab, author, elementary school librarian</figcaption>
+                </figure>
+                
+                <figure class="brown-barn-testimonials__slide">
+                    <blockquote class="brown-barn-testimonials__quote">
+                        “I bought The Party in the Old Brown Barn on a whim, and I’m so glad I did. This book is absolutely adorable. The story is warm, fun, and full of heart, exactly the kind of feel-good read my kids love at bedtime. The characters are charming, and the illustrations are beautiful and full of little details that kept my children totally engaged. My kids have already asked to read it multiple nights in a row, which is the best endorsement I can give! If you’re looking for a sweet, well-written children’s book that brings smiles and great conversation, this one is a winner. Highly recommend!”
+                    </blockquote>
+                    <figcaption class="brown-barn-testimonials__author">— Faye, online customer
+</figcaption>
+                </figure>
+                
+                <figure class="brown-barn-testimonials__slide">
+                    <blockquote class="brown-barn-testimonials__quote">
+                        “Our family absolutely loves this book! The story is so sweet and the illustrations are too! If you’re a family like us that loves animals and nature, you will love this book!”
+                    </blockquote>
+                    <figcaption class="brown-barn-testimonials__author">— Gina Mackovic, owner of Lil' Buckeroo's Petting Zoo</figcaption>
+                </figure>
+                
+                <figure class="brown-barn-testimonials__slide">
+                    <blockquote class="brown-barn-testimonials__quote">
+                        “I really appreciate the themes of adaptability, positivity, and conservation. All so important!”
+                    </blockquote>
+                    <figcaption class="brown-barn-testimonials__author">— editor at Flamingo Books, an imprint of Penguin Young Readers</figcaption>
+                </figure>
+            </div>
+            
+            <!-- dots will be injected by JS -->
+            <div class="brown-barn-testimonials__dots" aria-label="Brown Barn testimonials navigation"></div>
+        </div>
     </div>
     <!-- Right Content Section-->
 	<div class="cs-right">
@@ -340,4 +378,46 @@ eleventyNavigation:
             currentTestimonial = index;
             showTestimonial(currentTestimonial);
         }
+        
+        // Brown Barn Testimonial Slider
+        document.addEventListener('DOMContentLoaded', () => {
+  const root = document.getElementById('brown-barn-testimonials');
+  if (!root) return;
+
+  const slides = Array.from(root.querySelectorAll('.brown-barn-testimonials__slide'));
+  const dotsWrap = root.querySelector('.brown-barn-testimonials__dots');
+  if (!slides.length || !dotsWrap) return;
+
+  let current = slides.findIndex(s => s.classList.contains('is-active'));
+  if (current < 0) current = 0;
+
+  // Build dots based on slide count (prevents mismatch bugs)
+  dotsWrap.innerHTML = '';
+  const dots = slides.map((_, i) => {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'brown-barn-testimonials__dot';
+    btn.setAttribute('aria-label', `Show testimonial ${i + 1}`);
+    btn.addEventListener('click', () => show(i));
+    dotsWrap.appendChild(btn);
+    return btn;
+  });
+
+  function show(index) {
+    slides.forEach(s => s.classList.remove('is-active'));
+    dots.forEach(d => d.classList.remove('is-active'));
+
+    slides[index].classList.add('is-active');
+    dots[index].classList.add('is-active');
+    current = index;
+  }
+
+  show(current);
+
+  // Auto-rotate
+  const intervalMs = 5000;
+  setInterval(() => {
+    show((current + 1) % slides.length);
+  }, intervalMs);
+});
     </script>
