@@ -361,6 +361,10 @@
   .carousel {
       grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   }
+  img.coming_soon {
+      max-width: 330px;
+      margin: 0 auto;
+  }
 }
 /* Dark Mode */
 @media only screen and (min-width: 0em) {
