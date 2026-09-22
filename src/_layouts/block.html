@@ -1,0 +1,56 @@
+---
+title: 'Premium Content'
+description: 'Access our premium content.'
+preloadImg: ''
+permalink: 'premium-content/'
+eleventyNavigation:
+    key: Premium Content
+    order: 500
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/css/premium-content.css">
+{% endblock %}
+
+{% block body %}
+
+<!-- Lead Gate -->
+<div id="gate-overlay">
+    <div class="gate-box">
+        <h2>Unlock this Content</h2>
+        <p>Please enter your email address to access the full article.</p>
+
+        <form id="email-form">
+            <label for="user-email" class="sr-only">Email Address</label>
+
+            <input
+                type="email"
+                id="user-email"
+                name="email"
+                placeholder="name@example.com"
+                required
+            >
+
+            <button type="submit">Unlock Content</button>
+        </form>
+    </div>
+</div>
+
+<!-- Gated Content -->
+<section id="premium-content">
+    <h1>Secret Formula Revealed</h1>
+
+    <p>
+        This is the premium content that will be hidden until
+        the visitor submits the form.
+    </p>
+
+    <!-- Rest of your page goes here -->
+
+</section>
+
+<script defer src="/assets/js/content-gate.js"></script>
+
+{% endblock %}
