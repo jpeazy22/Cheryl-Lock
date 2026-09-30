@@ -21,19 +21,34 @@ permalink: '/premium-content/'
 
 <div id="gate-overlay">
     <div class="gate-box">
-        <h2>Unlock this Content</h2>
-        <p>Please enter your email address to access the full article.</p>
+        <form 
+    id="premium-form" 
+    name="Premium Content" 
+    method="POST"
+    action="/premium-content"
+    netlify>
+    <input type="hidden" name="form-name" value="Premium Content">
 
-        <form id="cs-form" name="Contact Form" netlify>
-            <input
-                type="email"
-                id="user-email"
-                name="email"
-                placeholder="name@example.com"
-                required
-            >
-            <button type="submit">Unlock Content</button>
-        </form>
+    <div class="cs-content"> 
+        <h2>Unlock this Content</h2> 
+        <p>Please enter your email address to access premium content downloads.</p> 
+    </div>
+
+    <label>
+        Email
+        <input 
+            required 
+            type="email" 
+            id="premium-email" 
+            name="email" 
+            placeholder="Email"
+        >
+    </label>
+
+    <button class="cs-button-solid" type="submit">
+        Unlock Content
+    </button>
+</form>
     </div>
 </div>
 

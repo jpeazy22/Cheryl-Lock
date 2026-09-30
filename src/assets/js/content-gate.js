@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const form = document.getElementById('cs-form');
+    const form = document.getElementById('premium-form');
     const overlay = document.getElementById('gate-overlay');
     const content = document.getElementById('premium-content');
 
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (event) {
         event.preventDefault();
 
-        const email = document.getElementById('user-email').value;
+        const email = document.getElementById('email').value;
 
         if (!email) return;
 
