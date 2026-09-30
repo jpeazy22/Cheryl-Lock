@@ -15,7 +15,9 @@
 /* ============================================
    CONTENT GATE
 ============================================ */
-
+#int-hero {
+    z-index: 600;
+}
 #premium-content {
     /* filter: blur(8px); */
     /* pointer-events: none; */
@@ -34,13 +36,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 500;
     padding: 20px;
 }
 
 .gate-box {
     width: 100%;
     max-width: 500px;
+    position: fixed;
+    top: 63%;
     background: #fff;
     padding: 40px;
     border-radius: 8px;
@@ -89,7 +93,6 @@
 
 #gate-overlay {
     text-align: center;
-    margin-top: 16%;
 }
 /* .services {
     margin-top: -20px;
@@ -315,6 +318,10 @@
     	width: 30%;
 		text-align: center;
 		margin: 1.3%;
+    }
+    .gate-box {
+        position: fixed;
+        top: 38%;
     }
 }
 
